@@ -1,0 +1,12 @@
+factor = 0.03
+
+amount = float(input("enter ur cash in: "))
+dayz = float(input("enter dayz to cash: "))
+
+
+while dayz < 10:
+    dayz = dayz + 1
+    i = amount + amount * factor
+    amount = amount + i
+if dayz <= 10:
+    print (i)
