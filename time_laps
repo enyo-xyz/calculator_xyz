@@ -1,0 +1,10 @@
+#miles_calculator################
+#################################
+
+avg_speed = float(input("what's ur average speed? "))
+distance = float(input("where u gonna go (in km)? "))
+
+run_time = distance / avg_speed
+run_time = float(run_time)
+
+print(run_time)
