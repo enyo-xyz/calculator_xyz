@@ -1,0 +1,61 @@
+#!/usr/bin/python3
+#LongTerm_xyz
+
+#def calculatorx()
+
+counter = 1
+
+pos = "yes"
+neg = "no"
+
+print("... up on console L7") 
+
+print()  
+
+amount = float(input("how much u gonna deposit ?? "))
+result = str(input("u like to cash in some of ur money (yes/no) ?? "))
+
+print()
+
+if result == pos:
+   print("... alright we will calculate that !!")
+   print()
+   dayz = float(input("how long u wanna cash in (in days) ?? "))
+   factor = float(input("what's ur accepted rate on cash out (per cent) ?? "))
+ 
+print() 
+   
+if result == neg:
+   print("... alright then have a nice day !!")
+   
+   exit()
+
+factor = factor / 100
+x = amount
+
+if result == pos:
+   while counter < dayz:
+      counter = counter + 1
+      i = amount + amount * factor
+      amount = i
+      
+i_temp = i      
+      
+if counter >= dayz:
+    i = round(float(i), 2)
+    print("that's more then around ... {}".format(i))
+    
+print() 
+   
+if result == pos:
+   x = i_temp - x
+   x = float(x)
+   x = round(x, 2)
+   
+   print("... that's around more then {}".format(x)) 
+   
+else:
+   print("... wrong value entered !!")
+   exit()
+
+#calculatorx()
